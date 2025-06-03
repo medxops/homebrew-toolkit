@@ -5,11 +5,11 @@
 class TrazrGen < Formula
   desc "A tool to generate synthetic OpenTelemetry logs, metrics and traces telemetry data."
   homepage "https://github.com/medxops/trazr-gen"
-  version "0.1.85"
+  version "0.1.87"
 
   on_macos do
-    url "https://github.com/medxops/trazr-gen/releases/download/v0.1.85/trazr-gen_darwin_amd64.tar.gz"
-    sha256 "bee4f6b253cfb43dc8947d3a59b16ac9027435dbe6fe3d1d464bb9b90383dcfa"
+    url "https://github.com/medxops/trazr-gen/releases/download/v0.1.87/trazr-gen_darwin_amd64.tar.gz"
+    sha256 "3cc9cf5ac01e467d840c5a50d16302cd3b4f4ac41e9a0893d989380706ea02d8"
 
     def install
       bin.install "trazr-gen"
@@ -29,8 +29,8 @@ class TrazrGen < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/medxops/trazr-gen/releases/download/v0.1.85/trazr-gen_linux_amd64.tar.gz"
-        sha256 "6fdab51aa726f18b36888890e8438c694ae21b0e03cc9e7b89699ad19b5146f7"
+        url "https://github.com/medxops/trazr-gen/releases/download/v0.1.87/trazr-gen_linux_amd64.tar.gz"
+        sha256 "0b4b9edfd2ab16e19fdcf67da89488640346a54ce0abc66fc1f69d04fb305610"
 
         def install
           bin.install "trazr-gen"
