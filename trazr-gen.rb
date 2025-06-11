@@ -5,20 +5,20 @@
 class TrazrGen < Formula
   desc "A tool to generate synthetic OpenTelemetry logs, metrics and traces telemetry data."
   homepage "https://github.com/medxops/trazr-gen"
-  version "0.6.2"
+  version "0.6.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/medxops/trazr-gen/releases/download/v0.6.2/trazr-gen_darwin_amd64.tar.gz"
-      sha256 "2795ead164dc10242502e44b93b1b775e669ebfd0968cbc981fdf3ea00060011"
+      url "https://github.com/medxops/trazr-gen/releases/download/v0.6.3/trazr-gen_darwin_amd64.tar.gz"
+      sha256 "13c551c493b0bbccf5cbf46fb5979163e2c6c5b0954bb3058f40888848b8ceac"
 
       def install
         bin.install "trazr-gen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/medxops/trazr-gen/releases/download/v0.6.2/trazr-gen_darwin_arm64.tar.gz"
-      sha256 "b18e266ff205d39aa1a643887d0810bf2ec20e4be3f4b1b4713fba697143b3da"
+      url "https://github.com/medxops/trazr-gen/releases/download/v0.6.3/trazr-gen_darwin_arm64.tar.gz"
+      sha256 "9eb7b87ec50428b3243feae8f8f6f3f5abb18e98609eed57f6ab55a10a08c4b9"
 
       def install
         bin.install "trazr-gen"
@@ -29,8 +29,8 @@ class TrazrGen < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/medxops/trazr-gen/releases/download/v0.6.2/trazr-gen_linux_amd64.tar.gz"
-        sha256 "4f614183eabe1632e404cbcf2c620569eaeeb4213f1f818d615b95b338e50fc5"
+        url "https://github.com/medxops/trazr-gen/releases/download/v0.6.3/trazr-gen_linux_amd64.tar.gz"
+        sha256 "b936b8f75f4a8a4305821c022e872357a38251080a1656b941bca01121f542a0"
 
         def install
           bin.install "trazr-gen"
@@ -39,8 +39,8 @@ class TrazrGen < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/medxops/trazr-gen/releases/download/v0.6.2/trazr-gen_linux_arm64.tar.gz"
-        sha256 "cd701705828dd2debe0a8da16e7040d13191ea641586cecd592b1be669641580"
+        url "https://github.com/medxops/trazr-gen/releases/download/v0.6.3/trazr-gen_linux_arm64.tar.gz"
+        sha256 "b6180a1b77e83d519077f4d25b140345275e11ac2f62c030f3f6bb541e5eb7ab"
 
         def install
           bin.install "trazr-gen"
